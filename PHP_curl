@@ -1,5 +1,5 @@
 <?php  
-$url = "http://api.sodlapp.com/ippis/TI2793";
+$url = "http://api.sodlapp.com/ippis/id"; // e.g GH87868
 
 $curl = curl_init($url);
 curl_setopt($curl, CURLOPT_URL, $url);
