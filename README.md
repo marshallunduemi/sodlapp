@@ -4,9 +4,21 @@ Sodlapp API allows you to Identity, verify and retrieve CIVIL SERVANT'S key info
 
 ####################################################################################
  
+```php
 curl -X GET https://api.sodlapp.com/ippis/xxxxxx -H 
 "Authorization: Bearer sk_live_xxxxxxxxxxxxxxxxxxxxxxxxxxxx" 
+```
+##  This will be your Ippis ID, staff ID or phone number
+```php
+ https://api.sodlapp.com/ippis/xxxxxx 
+ ///xxxxxx will be your Ippis ID, staff ID or phone number
+```
+## This will be your secret token, create one by signing up ( www.developer.sodlapp.com )
 
+```php
+ "Authorization: Bearer sk_live_xxxxxxxxxxxxxxxxxxxxxxxxxxxx" 
+ /// This will be your secret token, create one by signing up
+```
 
 ## API request example to api.sodlapp.com using the HTTP GET method
 
@@ -39,5 +51,7 @@ print_r($resp); // all json fields
 
 
 ?>
+```
+Visit Sodlapp website www.sodlapp.com
 
 						
