@@ -10,7 +10,7 @@ https://reqbin.com/idydrkt7
 
 ```php
 curl -X GET https://api.sodlapp.com/ippis/xxxxxx -H 
-"Authorization: Bearer sk_live_xxxxxxxxxxxxxxxxxxxxxxxxxxxx" 
+"Authorization: Bearer is_live_xxxxxxxxxxxxxxxxxxxxxxxxxxxx" 
 ```
 ##  This will be your Ippis ID, staff ID or phone number
 ```php
@@ -20,7 +20,7 @@ curl -X GET https://api.sodlapp.com/ippis/xxxxxx -H
 ## This will be your secret token, create one by signing up ( www.developer.sodlapp.com )
 
 ```php
- "Authorization: Bearer sk_live_xxxxxxxxxxxxxxxxxxxxxxxxxxxx" 
+ "Authorization: Bearer is_live_xxxxxxxxxxxxxxxxxxxxxxxxxxxx" 
  /// This will be your secret token, create one by signing up
 ```
 
@@ -40,7 +40,7 @@ curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 $headers = array(
     'Accept: application/json',
     'Content-Type: application/x-www-form-urlencoded',
-    'Authorization: Bearer sk_live_xxxxxxxxxxxxxxxxxxxxxx', // this will be your secret token, create one by signing up
+    'Authorization: Bearer is_live_xxxxxxxxxxxxxxxxxxxxxxxxxxxx', // this will be your secret token, create one by signing up
 );
 
 curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
