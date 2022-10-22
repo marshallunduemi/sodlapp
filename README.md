@@ -16,7 +16,7 @@ https://api.sodlapp.com/ippis/xxxxxx API endpoint.
 ``` php
 
 <?php  
-$url = "https://api.sodlapp.com/ippis/xxxxxx";
+$url = "https://api.sodlapp.com/ippis/xxxxxx"; ///xxxxxx will be your Ippis ID, staff ID or phone number
 $curl = curl_init($url);
 curl_setopt($curl, CURLOPT_URL, $url);
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
@@ -24,7 +24,7 @@ curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 $headers = array(
     'Accept: application/json',
     'Content-Type: application/x-www-form-urlencoded',
-    'Authorization: Bearer sk_live_d33838261860da7b712022f377c90dcf87be1bfb',
+    'Authorization: Bearer sk_live_xxxxxxxxxxxxxxxxxxxxxx', // this will be your secret token, create one by signing up
 );
 
 curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
@@ -35,7 +35,7 @@ curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
 $resp = curl_exec($curl);
 curl_close($curl);
  
-print_r($resp);
+print_r($resp); // all json fields
 
 
 ?>
