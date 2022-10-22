@@ -8,7 +8,7 @@ curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 $headers = array(
     'Accept: application/json',
     'Content-Type: application/x-www-form-urlencoded',
-    'Authorization: Bearer sk_live_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
+    'Authorization: Bearer is_live_xxxxxxxxxxxxxxxxxxxxxxxxxxxx',
 );
 
 curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
